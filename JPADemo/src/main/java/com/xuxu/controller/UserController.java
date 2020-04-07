@@ -34,6 +34,11 @@ public class UserController {
     }
 
 
+    /**
+     * 新增用户
+     * @param user
+     * @return
+     */
     @PostMapping("/add")
     public Result add(@RequestBody User user){
         userService.add(user);
